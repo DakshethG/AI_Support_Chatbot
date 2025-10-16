@@ -217,13 +217,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **Daksheth G** - *Initial work* - [@DakshethG](https://github.com/DakshethG)
 
-## 🙏 Acknowledgments
-
-- OpenRouter for LLM API
-- FastAPI for the excellent backend framework
-- React team for the frontend framework
-- Docker for containerization
-
 ---
 
 ## 🎯 Quick Commands Reference
@@ -322,23 +315,6 @@ Perfect for integrating with:
 
 ---
 
-## 📋 **Roadmap**
-
-### 🎯 **Coming Soon**
-- [ ] **Voice Chat** - Speech-to-text integration
-- [ ] **Multi-language** - Translation support
-- [ ] **Vector Search** - Semantic FAQ matching
-- [ ] **A/B Testing** - Response optimization
-- [ ] **Mobile App** - Native iOS/Android
-
-### 🔮 **Future Ideas**
-- [ ] **AI Training** - Custom model fine-tuning
-- [ ] **Analytics Dashboard** - Advanced business metrics
-- [ ] **Integration Hub** - Pre-built connectors
-- [ ] **White-label** - Customizable branding
-
----
-
 ## 🚨 **Troubleshooting**
 
 ### 🔧 **Common Issues**
@@ -388,11 +364,5 @@ MIT License - feel free to use this in your projects!
 ---
 
 <div align="center">
-
-**Built with ❤️ for better customer support experiences**
-
-🤖✨ **Happy chatting!** ✨🤖
-
-[⭐ Star this repo](https://github.com/your-username/ai-support-bot) • [🐛 Report Bug](https://github.com/your-username/ai-support-bot/issues) • [💡 Feature Request](https://github.com/your-username/ai-support-bot/issues)
 
 </div>
