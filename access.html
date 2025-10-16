@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Support Bot - Access Dashboard</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 300;
+        }
+        .header p {
+            margin: 10px 0 0 0;
+            opacity: 0.9;
+            font-size: 1.1em;
+        }
+        .content {
+            padding: 40px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            color: #4facfe;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .link-card {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 10px;
+            padding: 20px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+        }
+        .link-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-color: #4facfe;
+        }
+        .link-title {
+            font-weight: bold;
+            color: #4facfe;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+        .link-url {
+            color: #666;
+            font-size: 0.9em;
+            word-break: break-all;
+        }
+        .link-description {
+            margin-top: 8px;
+            font-size: 0.9em;
+            color: #777;
+        }
+        .status-indicator {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+        .status-online {
+            background: #28a745;
+        }
+        .commands {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .command {
+            background: #343a40;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            margin: 10px 0;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .command:hover {
+            background: #495057;
+        }
+        .quick-actions {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .action-btn {
+            background: #4facfe;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+        .action-btn:hover {
+            background: #3d8bfe;
+            transform: scale(1.05);
+        }
+        .emoji {
+            font-size: 1.2em;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🤖 AI Support Bot</h1>
+            <p>Complete Access Dashboard - All Your Links & Resources</p>
+        </div>
+        
+        <div class="content">
+            <div class="section">
+                <h2><span class="emoji">🌐</span>Main Applications</h2>
+                <div class="links-grid">
+                    <a href="http://localhost:3000" class="link-card" target="_blank">
+                        <div class="link-title">
+                            <span class="status-indicator status-online"></span>
+                            Frontend Chat Interface
+                        </div>
+                        <div class="link-url">http://localhost:3000</div>
+                        <div class="link-description">Main chat interface where customers interact with your AI bot</div>
+                    </a>
+                    
+                    <a href="http://localhost:8000/docs" class="link-card" target="_blank">
+                        <div class="link-title">
+                            <span class="status-indicator status-online"></span>
+                            API Documentation
+                        </div>
+                        <div class="link-url">http://localhost:8000/docs</div>
+                        <div class="link-description">Interactive API documentation with all endpoints</div>
+                    </a>
+                    
+                    <a href="http://localhost:8000/health" class="link-card" target="_blank">
+                        <div class="link-title">
+                            <span class="status-indicator status-online"></span>
+                            Health Check
+                        </div>
+                        <div class="link-url">http://localhost:8000/health</div>
+                        <div class="link-description">System health status and diagnostics</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2><span class="emoji">📊</span>Monitoring & Analytics</h2>
+                <div class="links-grid">
+                    <a href="http://localhost:3001" class="link-card" target="_blank">
+                        <div class="link-title">
+                            <span class="status-indicator status-online"></span>
+                            Grafana Dashboard
+                        </div>
+                        <div class="link-url">http://localhost:3001</div>
+                        <div class="link-description">Visual dashboards and metrics monitoring</div>
+                    </a>
+                    
+                    <a href="http://localhost:9090" class="link-card" target="_blank">
+                        <div class="link-title">
+                            <span class="status-indicator status-online"></span>
+                            Prometheus Metrics
+                        </div>
+                        <div class="link-url">http://localhost:9090</div>
+                        <div class="link-description">Raw metrics and monitoring data</div>
+                    </a>
+                    
+                    <a href="http://localhost:8000/metrics" class="link-card" target="_blank">
+                        <div class="link-title">
+                            <span class="status-indicator status-online"></span>
+                            System Metrics
+                        </div>
+                        <div class="link-url">http://localhost:8000/metrics</div>
+                        <div class="link-description">Application-specific metrics</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2><span class="emoji">🛠️</span>Management Commands</h2>
+                <div class="commands">
+                    <p><strong>Start Everything:</strong></p>
+                    <div class="command" onclick="copyToClipboard('./start_bot.sh')">./start_bot.sh</div>
+                    
+                    <p><strong>Dashboard Only:</strong></p>
+                    <div class="command" onclick="copyToClipboard('./bot_dashboard.sh')">./bot_dashboard.sh</div>
+                    
+                    <p><strong>Quick Chat Test:</strong></p>
+                    <div class="command" onclick="copyToClipboard('curl -X POST \"http://localhost:8000/api/v1/chat\" -H \"Content-Type: application/json\" -d \'{\"message\": \"What is your return policy?\", \"session_id\": \"test\"}\'')">curl -X POST "http://localhost:8000/api/v1/chat" -H "Content-Type: application/json" -d '{"message": "What is your return policy?", "session_id": "test"}'</div>
+                    
+                    <p><strong>View Sessions:</strong></p>
+                    <div class="command" onclick="copyToClipboard('curl \"http://localhost:8000/api/v1/admin/sessions?limit=10\" | python3 -m json.tool')">curl "http://localhost:8000/api/v1/admin/sessions?limit=10" | python3 -m json.tool</div>
+                    
+                    <p><strong>Stop Services:</strong></p>
+                    <div class="command" onclick="copyToClipboard('docker-compose down')">docker-compose down</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2><span class="emoji">🎯</span>Quick Actions</h2>
+                <div class="quick-actions">
+                    <a href="http://localhost:3000" class="action-btn" target="_blank">
+                        🚀 Open Chat Bot
+                    </a>
+                    <a href="http://localhost:8000/docs" class="action-btn" target="_blank">
+                        📚 View API Docs
+                    </a>
+                    <a href="http://localhost:3001" class="action-btn" target="_blank">
+                        📊 Open Grafana
+                    </a>
+                    <button class="action-btn" onclick="runQuickTest()">
+                        🧪 Run Quick Test
+                    </button>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2><span class="emoji">📋</span>Session Management</h2>
+                <div style="background: #f8f9fa; padding: 20px; border-radius: 10px;">
+                    <p><strong>View Session Data:</strong></p>
+                    <ul>
+                        <li><a href="http://localhost:8000/api/v1/admin/sessions?limit=10" target="_blank">Recent Sessions</a></li>
+                        <li><a href="http://localhost:8000/api/v1/usage?days=7" target="_blank">Usage Statistics</a></li>
+                        <li>Session Transcript: <code>/api/v1/admin/session/{session_id}/transcript</code></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(function() {
+                alert('Command copied to clipboard!');
+            });
+        }
+
+        function runQuickTest() {
+            fetch('http://localhost:8000/api/v1/chat', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    message: 'What is your return policy?',
+                    session_id: 'html-test'
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert('✅ Test Successful!\n\nAnswer: ' + data.answer + '\n\nConfidence: ' + (data.confidence * 100) + '%');
+            })
+            .catch(error => {
+                alert('❌ Test Failed: ' + error);
+            });
+        }
+
+        // Check service status
+        function checkStatus() {
+            const services = [
+                { url: 'http://localhost:3000', name: 'Frontend' },
+                { url: 'http://localhost:8000/health', name: 'Backend' },
+                { url: 'http://localhost:3001', name: 'Grafana' },
+                { url: 'http://localhost:9090', name: 'Prometheus' }
+            ];
+
+            // You can add status checking logic here
+        }
+
+        // Load status on page load
+        window.addEventListener('load', checkStatus);
+    </script>
+</body>
+</html>
